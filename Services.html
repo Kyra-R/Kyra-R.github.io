@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>MagName</title>
+  <link rel="stylesheet" href="css_files/services.css">
+  <link rel="stylesheet" href="css_files/grid_form.css">
+    <link rel="stylesheet" href="css_files/grid_additions.css">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="grid header"><p>Ювелирный магазин MagName</p></div>
+
+    <div class="main">
+      <div class="connect_us">
+
+          <div class="explanations">
+            <h2 id="Connections">Как сделать заказ</h2>
+          </div>
+
+            <section class="accordion">
+
+
+                <div class="content">
+                    <fieldset>
+                        <legend>Форма для заполнения</legend>
+                    <form action ="" method="get" id="enter">
+                    <p>
+                       <label class="form-item" for="name">Введите имя:</label><br>
+                        <input class="form-item" type="text" name="name" id="name" pattern="[A-Za-zА-Яа-яЁё]{3,20}" placeholder="Ваше имя?" required>
+                    </p>
+                    <p>
+                        <label class="form-item" for="email">Введите email:</label><br>
+                        <input class="form-item" type="email" name="email" id="email" required>
+                    </p>
+                    <p>
+                        <p><label class="form-item" for="service">Услуга:  </label><br>
+                        <select name="service">
+                            <option>Индивидуальный заказ</option>
+                            <option>Купить готовое изделие</option>
+                            <option>Починка изделия</option>
+                            <option>Чистка изделия</option>
+                        </select>
+                        <p><label class="form-item" for="material">Материал:  </label><br>
+                        <select name="material">
+                            <option value="1">Серебро</option>
+                            <option value="2">Золото</option>
+                            <option value="3">Платина</option>
+                        </select></p>
+                    </p>
+                    <p> Экстренный заказ
+                        <input type="checkbox" name="Экстренный заказ" checked>
+                    </p>
+                    <p>
+                        <textarea rows="2" cols="20" placeholder="Опишите Ваши пожелания" name="text"></textarea>
+                    </p>
+                    <button type="submit">Отправить</button>
+
+                    </form>
+                    </fieldset>
+                </div>
+              </section>
+
+
+         <div class="explanations">
+            <p> Если мы долго не отвечаем: </p>
+            <p>
+                По номеру телефона: <a href="tel:01234567890">8-800-555-35-35</a>
+                <br>По электронной почте: <a href="mailto:kira-kiri-kiri@mail.ru">MagName@magazine.ru</a>
+            </p>
+         </div>
+    </div>
+
+
+
+    </div>
+
+    <div class="grid navigation">
+        <div class="nav block-1-1">
+            <div class="btn"><a href="Articles.html">Статьи</a></div>
+        </div>
+        <div class="nav block-2-1">
+             <div class="btn"><a href="index.html">Главная</a></div>
+        </div>
+        <div class="nav block-3-1">
+             <div class="btn"><a href="Services.html">Услуги</a></div>
+        </div>
+        <div class="nav block-4-1">
+             <div class="btn"><a href="Login.html">Вход</a></div>
+        </div>
+
+    </div>
+
+
+
+    <footer>
+         <address>
+            Контакты: <br>
+        <a href="tel:+79162502650">Телефон</a>
+        <a href="mailto:kira-kiri-kiri@mail.ru">mail</a>  <p>Author: Kira Podshivalova</p> </address>
+
+
+
+         <div class="socials">
+        <div class="socials-flex">
+            <div class="socials-flex-item">
+                <div class="socials-flex-item-hide"></div>
+                <img src="socials/facebook.png"  alt="">
+            </div>
+            <div class="socials-flex-item">
+                <div class="socials-flex-item-hide"></div>
+                <img src="socials/telegram.png"  alt="">
+            </div>
+            <div class="socials-flex-item">
+                <div class="socials-flex-item-hide"></div>
+                <img src="socials/instagram.png"  alt="">
+            </div>
+            <div class="socials-flex-item">
+                <div class="socials-flex-item-hide"></div>
+                <img src="socials/vk.png"  alt="">
+            </div>
+            <div class="socials-flex-item">
+                <div class="socials-flex-item-hide"></div>
+                <img src="socials/youtube.png"  alt="">
+            </div>
+        </div>
+    </div>
+
+
+    </footer>
+
+  </div>
+
+</body>
+</html>
