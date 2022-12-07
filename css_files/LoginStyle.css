@@ -1,5 +1,5 @@
 ﻿
-@media screen and (min-device-width: 601px){
+@media screen and (min-device-width: 550px){
 .container_main {
 
   display: grid;
@@ -66,7 +66,7 @@ margin-right: 20%;
 }
 
 
-@media screen and (max-device-width: 600px) {
+@media screen and (max-device-width: 551px) {
 
 .container_main {
     height: 90vh;
