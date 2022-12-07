@@ -152,6 +152,70 @@ grid-template-areas:
     }
 }
 
+@media screen and  (max-width: 400px) {
+	.square:nth-child(1) {
+    width: 100px;
+    height: 100px;
+    top: -15px;
+    right: 0px;
+    border-radius: 3em;
+}
+
+.square:nth-child(2) {
+    width: 80px;
+    height: 80px;
+    bottom: 155px;
+    left: 0px;
+    z-index: 2;
+    border-radius: 3em;
+}
+
+.square:nth-child(3) {
+    width: 30px;
+    height: 30px;
+    bottom: 85px;
+    right: 5px;
+    z-index: 2;
+    border-radius: 3em;
+}
+
+.square:nth-child(4) {
+    width: 40px;
+    height: 40px;
+    bottom: 25px;
+    left: 0px;
+    border-radius: 3em;
+}
+
+.square:nth-child(5) {
+    width: 30px;
+    height: 30px;
+    top: -15px;
+    left: 5px;
+    border-radius: 3em;
+}
+
+.square:nth-child(6) {
+    width: 40px;
+    height: 40px;
+    top: 185px;
+    right: 10px;
+    z-index: 2;
+    border-radius: 3em;
+}
+
+.square:nth-child(7) {
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 50%;
+    z-index: 2;
+    border-radius: 3em;
+}
+
+}
+	
+@media screen and  (min-width: 401px) {	
 .square:nth-child(1) {
     width: 100px;
     height: 100px;
@@ -164,7 +228,7 @@ grid-template-areas:
     width: 130px;
     height: 130px;
     top: 105px;
-    left: -100px;
+    left: -80px;
     z-index: 2;
     border-radius: 3em;
 }
@@ -182,7 +246,7 @@ grid-template-areas:
     width: 50px;
     height: 50px;
     bottom: 25px;
-    left: -85px;
+    left: -60px;
     border-radius: 3em;
 }
 
@@ -190,15 +254,15 @@ grid-template-areas:
     width: 50px;
     height: 50px;
     top: -15px;
-    left: -25px;
+    left: 5px;
     border-radius: 3em;
 }
 
 .square:nth-child(6) {
-    width: 85px;
-    height: 85px;
-    top: 165px;
-    right: -100px;
+    width: 80px;
+    height: 80px;
+    top: 185px;
+    right: -80px;
     z-index: 2;
     border-radius: 3em;
 }
@@ -211,7 +275,7 @@ grid-template-areas:
     z-index: 2;
     border-radius: 3em;
 }
-
+}
 
 .form {
     position: relative;
