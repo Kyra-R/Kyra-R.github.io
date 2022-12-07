@@ -111,6 +111,7 @@
 .block-4-1 { grid-area: block-4-1; }
 
 .nav {
+	font-size: 150%;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -118,7 +119,7 @@
     word-break: break-all;
     align-items: center;
     justify-content: center;
-    margin: 0.5em;
+    margin: 3px;
     border-radius: 3px;
     background-color: #B8CCD1;
     border: 5px solid #B8CCD1;
@@ -126,13 +127,4 @@
     filter: drop-shadow(0px 0px 8px rgb(180 194 198 / 1));
 }
 
-@media screen and (max-width: 600px){
-	.nav {
-	font-size: 110%;
-	}
-}
-@media screen and (min-width: 601px){
-	.nav {
-    font-size: 150%;
-	}
-}
+
