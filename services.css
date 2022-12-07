@@ -1,0 +1,253 @@
+body {
+  background-color: #B1C7CD;
+
+}
+
+.container {  
+  display: grid;
+  gap: 15px 15px;
+
+  grid-template-columns: 5fr 1fr;
+  grid-template-rows: 7% 10% auto auto auto;
+  grid-template-areas:
+    "header header"
+    "navigation navigation"
+    "main main"
+    "footer footer";
+}
+@media screen and (max-width: 2000px){
+  .container {  
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 7% 10% auto auto;
+    grid-template-areas:
+     "header header"
+    "navigation navigation"
+    "main main"
+    "footer footer";
+  }
+}
+@media screen and ((max-width: 1000px) or ((min-device-width: 550px) and (max-device-width: 1000px))) {
+  .container {  
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 7% auto 10% auto;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "navigation navigation"
+      "footer footer";
+  }
+}
+@media screen and ((max-width: 700px) or (max-device-width: 549px)) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 7% auto 7% auto;
+    grid-template-areas:
+      "header"
+      "main"
+      "navigation"
+      "footer";
+  }
+}
+
+.header     { font-size: 30px; grid-area: header; text-align: center; border: 10px double #ffff;
+ font-weight: bold; border-radius: 30px; margin-left:10%;margin-right: 10%;}
+.somebar { grid-area: somebar; text-align: center; font-weight: bold;border-radius: 5px;}
+.main       { grid-area: main; padding: 20px;}
+.navigation    { grid-area: navigation; border-radius: 5px;}
+.ads        { grid-area: ads; border-radius: 5px;}
+.form       { grid-area: form; }
+.footer     { grid-area: footer; }
+
+.header p {height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-block-start: 0em;
+margin-block-end: 0em;}
+
+
+.container .grid {
+  position: relative;
+  font-family: Georgia, "Times New Roman", Times, serif;
+    color: white;
+  background-color: #CDDEE3;
+
+  box-shadow: 1px 1px 10px 0px rgb(46 54 68 / 10%);
+}
+
+.container .grid:after {
+  content: "";
+  position: absolute;
+  padding: 16px 14px;
+}
+
+.main {
+  font-size: 25px;
+  background-color: #CDDEE3;
+  border: 5px solid rgb(149, 186, 188,0.4);
+}
+
+
+
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 5px 5px;
+  grid-template-areas:
+        "block-1-1 block-2-1 block-3-1 block-4-1"
+        "block-1-1 block-2-1 block-3-1 block-4-1"
+        "block-1-1 block-2-1 block-3-1 block-4-1"
+        "block-1-1 block-2-1 block-3-1 block-4-1";
+}
+
+
+
+@media screen and (max-width: 2000px) {
+
+  .navigation {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+       "block-1-1 block-2-1 block-3-1 block-4-1"
+        "block-1-1 block-2-1 block-3-1 block-4-1"
+        "block-1-1 block-2-1 block-3-1 block-4-1"
+        "block-1-1 block-2-1 block-3-1 block-4-1";
+}
+
+}
+@media screen and ((max-width: 1000px) or ((min-device-width: 550px) and (max-device-width: 1000px))) {
+
+ .navigation {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "block-1-1 block-2-1 block-3-1 block-4-1"
+        "block-1-1 block-2-1 block-3-1 block-4-1"
+        "block-1-1 block-2-1 block-3-1 block-4-1"
+        "block-1-1 block-2-1 block-3-1 block-4-1";
+}
+}
+@media screen and  ((max-width: 700px) or (max-device-width: 549px)) {
+  .main {
+    margin-left:10%;
+    margin-right:10%;
+  }
+  .navigation {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "block-1-1 block-2-1 block-3-1 block-4-1"
+        "block-1-1 block-2-1 block-3-1 block-4-1"
+        "block-1-1 block-2-1 block-3-1 block-4-1"
+        "block-1-1 block-2-1 block-3-1 block-4-1";
+}
+}
+
+
+
+
+.connect_us .explanations {
+    text-align: center;
+}
+
+form {
+background-color:#d6e1e4;
+padding: 5px;
+}
+#enter .label {
+     width: 80px; /* Ширина блока с текстом */
+   }
+ #enter .form-item {
+     width: 65%;
+     min-width:120px;
+     height: 24px;
+     margin-left: 1px; /* Расстояние между полем и текстом */
+     border: 1px solid #abadb3; /* Рамка вокруг текстового поля */
+     padding: 1px; /* Поля вокруг текста */
+     font-size: 20px;
+    font-family: Georgia, "Times New Roman",
+        Times, serif;
+   }
+   #enter .form-text {
+     margin-left: 20px; /* Отступ снизу */
+    font-family: Georgia, "Times New Roman",
+        Times, serif;
+   }
+   #enter .form-text:focus {
+     background: #ffe; /* Цвет фона */
+     border: 2px solid #29B0D9; /* Параметры рамки */
+     font-family: Georgia, "Times New Roman",
+        Times, serif;
+   }
+#enter .form-item:focus {
+     background-color:#b3c3c7; /* Цвет фона */
+     border: 3px solid #29B0D9; /* Параметры рамки */
+     font-family: Georgia, "Times New Roman",
+        Times, serif;
+   }
+input::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    color: grey;
+}
+textarea::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    color: grey;
+}
+   #enter p {
+    margin-left: 30px; /* Сдвиг вправо */
+   }
+   #enter textarea {
+    font-size: 20px;
+    width: 50%;
+   }
+    select {
+    font-size: 18px;
+    }
+
+
+  .accordion {
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-block-start: 0em;
+margin-block-end: 0em;
+margin-bottom: 50px;
+  }
+
+
+  .accordion .content {
+    width: 90%;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  .accordion label {
+    color: #fff;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 10px;
+    background: #b0100c;
+
+  }
+
+  .accordion label:hover,
+  .accordion label:focus {
+    background: #252525;
+  }
+
+  .accordion .handle label:before {
+    font-family: FontAwesome;
+    content: "\f107";
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1em;
+    line-height: 1.556em;
+    vertical-align: middle;
+    transition: 0.4s;
+
+  }
+
