@@ -45,7 +45,7 @@ fieldset {
 @media screen and (max-width: 700px){
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 10% auto 15% auto;
+    grid-template-rows: 10% auto 18% auto;
     grid-template-areas:
       "header"
       "main"
